@@ -59,6 +59,14 @@ function generateGrid(size) {
     div.style.width = `${squareSize}%`
     div.style.height = `${squareSize}%`;
     div.style.border = ".2rem solid black"
+    div.style.opacity = "1";
+
+    div.onclick = () => {
+      let currentOpacity = parseFloat(div.style.opacity);
+      if (currentOpacity > 0) {
+        div.style.opacity = (currentOpacity - 0.1).toFixed(1);
+      }
+    };
 
     div.addEventListener("mouseover", () => {
       const randomcolor = getRandomColor();
@@ -67,6 +75,7 @@ function generateGrid(size) {
 
     cont.appendChild(div);
   }
+  
 }
 
 function getRandomColor(){
