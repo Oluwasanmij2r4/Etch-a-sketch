@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+}
+
+.container {
+  max-width: 80%;
+  height: 80%;
+  width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.square {
+  /* width: 4%;
+    height: 4%; */
+  padding: 1.7em;
+  border: 1px solid red;
+  flex: 1;
+}
