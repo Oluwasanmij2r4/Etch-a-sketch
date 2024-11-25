@@ -58,7 +58,7 @@ function generateGrid(size) {
 
     div.style.width = `${squareSize}%`
     div.style.height = `${squareSize}%`;
-    div.style.border = ".2rem solid black"
+    div.style.border = ".1rem solid black"
     div.style.opacity = "1";
 
     div.onclick = () => {
