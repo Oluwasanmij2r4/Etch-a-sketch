@@ -1,5 +1,6 @@
 const cont = document.querySelector(".container");
 const button = document.querySelector(".btn");
+const reset = document.querySelector(".reset");
 let getGrid;
 let gridNum;
 
@@ -7,8 +8,15 @@ let gridNum;
 for (let i = 0; i < 256; i++) {
   const div = document.createElement("div");
   div.classList.add("square");
-  cont.appendChild(div);
-}
+
+   div.addEventListener("mouseover", () => {
+      const randomcolor = getRandomColor();
+      div.style.backgroundColor = randomcolor;
+    });
+
+    cont.appendChild(div);
+  }
+ 
 
 button.onclick = () => {
   getGrid = prompt(
@@ -51,6 +59,35 @@ function generateGrid(size) {
     div.style.width = `${squareSize}%`
     div.style.height = `${squareSize}%`;
     div.style.border = ".2rem solid black"
+
+    div.addEventListener("mouseover", () => {
+      const randomcolor = getRandomColor();
+      div.style.backgroundColor = randomcolor;
+    });
+
     cont.appendChild(div);
   }
+}
+
+function getRandomColor(){
+    const r = Math.floor (Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`
+}
+
+reset.onclick = () => {
+
+    cont.innerHTML = "";
+
+    for (let i = 0; i < 256; i++) {
+      const div = document.createElement("div");
+      div.classList.add("square");
+
+       div.addEventListener("mouseover", () => {
+      const randomcolor = getRandomColor();
+      div.style.backgroundColor = randomcolor;
+    });
+      cont.appendChild(div);
+    }
 }

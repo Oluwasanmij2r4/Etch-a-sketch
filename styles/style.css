@@ -28,14 +28,21 @@ html {
   width: 6.25%;
   height: 6.25%;
   margin-bottom: 0;
-  border: .2rem solid black;
+  border: 0.2rem solid black;
 }
 
-button {
+.btn {
   padding: 0.75rem;
-  margin-left: auto;
   font-size: 2rem;
   font-weight: 500;
+  margin: 0 auto;
+}
+.reset {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(26, 23, 179);
+  /* margin-left: auto; */
 }
 
 .hero {
