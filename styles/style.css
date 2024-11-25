@@ -10,7 +10,7 @@ html {
 }
 
 .parent {
-    max-width: 100%;
+  max-width: 100%;
   height: 100%;
   width: 1120px;
   margin: 5px auto;
@@ -18,28 +18,27 @@ html {
 }
 .container {
   max-width: 100%;
-  height: 90%;
+  height: 85%;
   border: 4px solid red;
   display: flex;
   flex-wrap: wrap;
 }
 
 .square {
-  /* width: 6%;
-  height: 6%; */
-  flex: 1;
-  padding: 2em;
-  border: 0.5px solid black;
+  width: 6.25%;
+  height: 6.25%;
+  margin-bottom: 0;
+  border: .2rem solid black;
 }
 
-button{
-    padding: .75rem;
-    margin-left: auto;
-    font-size: 2rem;
-    font-weight: 500;
+button {
+  padding: 0.75rem;
+  margin-left: auto;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.hero{
-    margin-bottom: 1rem;
-    display: flex;
+.hero {
+  margin-bottom: 1rem;
+  display: flex;
 }
